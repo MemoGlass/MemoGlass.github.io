@@ -16,8 +16,16 @@
   align-items: center;
 }
 
+h1 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
 .navbar {
   padding: 0px;
+  font-size: 17px;
   display: flex;
   align-items: center;
   max-width: 1000px;

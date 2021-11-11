@@ -5,12 +5,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <a href="/"> <img src={Logo} alt="Logo" style={{
-                
-                    
                     width: 240,
                     height: 126,
-                    
-                
+                    margin: -10
             }}/> </a>
             <div className="links">
                 
