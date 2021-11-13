@@ -1,22 +1,23 @@
 import React from 'react';
 import Logo from './logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <nav className="navbar">
             <a href="/"> <img src={Logo} alt="Logo" style={{
-                    width: 240,
-                    height: 126,
+                    width: 180,
+                    height: 94.5,
                     margin: -10
             }}/> </a>
             <div className="links">
                 
-                <a href="/aboutus">About us</a>
-                <a href="/login" style= {{
+                <Link to="/aboutus">About us</Link>
+                <Link to ="/login" style= {{
                     color: "white",
                     borderRadius: "7px",
                     backgroundColor: '#6abaf3'
-                }}>Login</a>
+                }}>Login</Link>
                 
             </div>
         </nav>

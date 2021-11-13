@@ -37,14 +37,18 @@ h1 {
 }
 .navbar .links {
   margin-left: auto;
+  
+  
 }
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  
 }
 .navbar a:hover {
   color: #6abaf3;
+  
 }
 .content {
   max-width: 1000px;
@@ -67,8 +71,42 @@ h1 {
 }
 
 .about h2{
-  font-size: 20px;
+  font-size: 30px;
   color: #6abaf3;
   margin-bottom: 8px;
   text-align: center;
+}
+
+.login {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+.login label {
+  text-align: left;
+  display: block;
+}
+.login h2 {
+  font-size: 20px;
+  color: #6abaf3;
+  margin-bottom: 30px;
+}
+.login input, .login textarea, .login select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.login button {
+  background: #6abaf3;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
 }
