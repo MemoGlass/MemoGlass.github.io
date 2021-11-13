@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
+import Dashboard from './Dashboard';
 
 const Login = () => {
 
     const adminUser = {
-        email: "admin@memoryglass.com",
-        password: "admin123"
+        email: " ",
+        password: " "
     }
     const [user, setuser] = useState({ email: "" });
     const [error, setError] = useState("");
@@ -38,8 +39,10 @@ const Login = () => {
     return (
         <div className="login">
             {(user.email != "") ? (
-                <div className="welcome">
-                    <h2>Welcome, Andrew</h2>
+                <div>
+                    <h1>Welcome, Andrew</h1>
+                    <h2>What would you like to do today?</h2>
+                    <Dashboard />
                     <button onClick={Logout}>Logout</button>
                 </div>
             ) : (

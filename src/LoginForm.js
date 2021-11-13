@@ -17,7 +17,7 @@ function LogoutForm({ Login, error }) {
 
                 <label htmlFor="email">Email</label>
                 <input
-                    type="email"
+                    type="text"
                     name="email"
                     id="email"
                     onChange={e => setDetails({ ...details, email: e.target.value })} value={details.name}
@@ -32,7 +32,7 @@ function LogoutForm({ Login, error }) {
                     required
                 />
 
-                <button type="submit">Login</button>
+                <button type="submit">Login</button>    
 
             </div>
         </form>
