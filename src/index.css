@@ -119,30 +119,7 @@ h1 {
   cursor: pointer;
 }
 
-.dashboard{
-  margin: 0 auto;
-  display: flex;
-  min-width: 100%;
-  flex-direction: column
-}
 
-.dashboard .innerdash{
-  width: 100%;
-  
-}
-
-.dashboard button{
-  
-  font-size: 30px;
-  color: #000000;
-  border: 1px solid #ddd;
- padding: 60px;
-  background: #fff;
-  width:45%; 
-  margin: 10px;
-  
-  
-}
 
 .dashboard button:hover{
   box-shadow: 1px 1px 3px rgba(0,0,0,1);
@@ -150,3 +127,22 @@ h1 {
 }
 
 
+.dashboard div {
+  display: flex;
+}
+
+.dashboard button {
+  flex: 1;
+  font-size: 30px;
+  color: #000000;
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 25px;
+  background: #fff;
+  margin: 10px;
+}
+
+.dashboard button:hover{
+  box-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+ 
