@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Navbar from './Navbar.js'
 const AboutUs = () => {
     const [about, setAbout] = useState([
         { title: 'Pitch 📊', body: 'Memory glass is a small standalone device that uses digital projection and facial recognition to help Alzheimer’s patients remember their loved ones.', id: 1 },
@@ -13,7 +14,9 @@ const AboutUs = () => {
 
     ])
     return (
+        
         <div className="AboutUs">
+            <Navbar />
             <h1>About MemoryGlass</h1>
             {about.map((about) => (
 

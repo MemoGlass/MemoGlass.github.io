@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Navbar from './Navbar.js'
 
 function LogoutForm({ Login, error }) {
     const [details, setDetails] = useState({ email: "", password: "" });
@@ -9,9 +10,14 @@ function LogoutForm({ Login, error }) {
 
     }
 
-    return (
+    return ( 
+        
+        
         <form onSubmit={submitHandler}>
+            <div>
+            <Navbar />
             <div className="loginform">
+            
                 <h2>Login here</h2>
                 {(error != "") ? (<div className="error">{error}</div>) : ""}
 
@@ -31,9 +37,11 @@ function LogoutForm({ Login, error }) {
                     onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password}
                     required
                 />
+                
 
-                <button type="submit">Login</button>    
+                <button type="submit">Login</button>
 
+            </div>
             </div>
         </form>
 

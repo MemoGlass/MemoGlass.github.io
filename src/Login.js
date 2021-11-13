@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
 import Dashboard from './Dashboard';
+import NavbarOut from './NavbarOut.js'
 
 const Login = () => {
 
@@ -26,26 +27,20 @@ const Login = () => {
         }
     }
 
-    const Logout = e => {
-        window.location.reload(false);
-        setTimeout(() => {
-            setuser({ email: "" })
-
-        }, 1000)
-
-
-    }
+    
 
     return (
         <div className="login">
             {(user.email != "") ? (
                 <div>
+                    <NavbarOut />
                     <h1>Welcome, Andrew</h1>
                     <h2>What would you like to do today?</h2>
                     <Dashboard />
-                    <button onClick={Logout}>Logout</button>
+                    
                 </div>
             ) : (
+                
                 <LoginForm Login={Login} error={error} />
             )}
         </div>
