@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import LoginForm from './LoginForm';
 import Dashboard from './Dashboard';
 import NavbarOut from './NavbarOut.js'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
     const adminUser = {
-        email: " ",
-        password: " "
+        email: "admin@memoryglass.com",
+        password: "andrewisbald"
     }
     const [user, setuser] = useState({ email: "" });
     const [error, setError] = useState("");
@@ -32,6 +33,8 @@ const Login = () => {
     return (
         <div className="login">
             {(user.email != "") ? (
+
+                
                 <div>
                     <NavbarOut />
                     <h1>Welcome, Andrew</h1>
@@ -39,6 +42,7 @@ const Login = () => {
                     <Dashboard />
                     
                 </div>
+                
             ) : (
                 
                 <LoginForm Login={Login} error={error} />

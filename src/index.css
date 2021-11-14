@@ -12,30 +12,25 @@
  
 
 * {
-  
   margin: 0;
   font-family: "Gilroy";
   color: #432;
   align-items: center;
   
 }
-
 h1 {
   margin: auto;
   width: 50%;
   text-align: center;
   padding: 10px;
 }
-
-
-
 .navbar {
   padding: 0px;
   font-size: 17px;
   display: flex;
   align-items: center;
   max-width: 1000px;
-  
+  margin-bottom: 30px;
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
@@ -43,14 +38,11 @@ h1 {
 }
 .navbar .links {
   margin-left: auto;
-  
-  
 }
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
-  padding: 6px;
-  
+  padding: 6px;  
 }
 .navbar a:hover {
   color: #6abaf3;
@@ -128,7 +120,7 @@ h1 {
   display: flex;
 }
 
-.dashboard button {
+.innerdash a {
   flex: 1;
   font-size: 30px;
   color: #000000;
@@ -137,9 +129,9 @@ h1 {
   padding: 25px;
   background: #fff;
   margin: 10px;
+  border-radius: 10px;
 }
 
-.dashboard button:hover{
+.dashboard a:hover{
   box-shadow: 1px 1px 3px rgba(0,0,0,1);
 }
- 
