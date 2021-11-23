@@ -3,6 +3,7 @@ import LoginForm from './LoginForm';
 import Dashboard from './Dashboard';
 import NavbarOut from './NavbarOut.js'
 import { Link } from 'react-router-dom';
+import Tabs from './loginnew.js';
 
 const Login = () => {
 
@@ -37,10 +38,7 @@ const Login = () => {
                 
                 <div>
                     <NavbarOut />
-                    <h1>Welcome, Andrew</h1>
-                    <h2>What would you like to do today?</h2>
-                    <Dashboard />
-                    
+                    <Tabs />
                 </div>
                 
             ) : (
