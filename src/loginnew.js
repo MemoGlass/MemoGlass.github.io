@@ -39,7 +39,7 @@ const Tabs = props => {
 export default function App() {
   return (
     <div className="App">
-      
+      <div className = "content">
       <Tabs>
         <div title="Contacts">
           <div><Contacts /></div> {" "}
@@ -63,6 +63,7 @@ export default function App() {
           {" "}
         </div>
       </Tabs>
+    </div>
     </div>
   );
 }

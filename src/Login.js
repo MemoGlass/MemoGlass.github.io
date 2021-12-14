@@ -25,7 +25,9 @@ const Login = () => {
         }
         else {
             console.log("Details do not match")
+        
             setError("⚠️ Email or password is incorrect ⚠️")
+            
         }
     }
 
@@ -33,7 +35,7 @@ const Login = () => {
 
     return (
         <div className="login">
-            {(user.email != "") ? (
+            {(user.email !== "") ? (
 
                 
                 <div>

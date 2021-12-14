@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
+
 /* base styles */
 
 @font-face {
@@ -60,7 +61,7 @@ h2 {
 .content {
   max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  
   align-items: center;
 }
 
@@ -94,16 +95,23 @@ h2 {
 }
 
 .loginform {
-  max-width: 400px;
+  width: 500px;
+  background-color: #fff;
   margin: 0 auto;
   text-align: center;
   border: 2px solid #ddd;
-  padding: 20px;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left:100px;
+  padding-right:100px;
   border-radius: 10px;
 }
 .login label {
+  width: 100%;
+  
   text-align: left;
   display: block;
+  color: #000000;
 }
 .login h2 {
   font-size: 20px;
@@ -113,6 +121,7 @@ h2 {
 }
 .login input, .login textarea, .login select {
   width: 100%;
+  color: #000000;
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
@@ -120,11 +129,12 @@ h2 {
   display: block;
 }
 .login button {
-  background: #6abaf3;
-  color: #fff;
-  border: 0;
+  background: #fff;
+  color: #000;
+  border: 2;
   padding: 8px;
   border-radius: 10px;
+  border-color: #000;
   cursor: pointer;
 }
 
@@ -155,7 +165,7 @@ h2 {
 
 
 .tabs {
-  padding-bottom: -10px;
+  
   display: flex;
   align-items: center;
   justify-content: center;

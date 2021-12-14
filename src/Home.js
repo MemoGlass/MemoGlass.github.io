@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar.js'
-import Banner from './banner.png'
+import Banner from './bannerhome.png'
 import { Link } from 'react-router-dom';
 
 
@@ -10,7 +10,7 @@ const Home = () => {
           <Navbar />
           <div>
           <img src={Banner} alt="Banner" style={{
-            marginTop: '-75px',
+            marginTop: '-30px',
               flex: 1,
               width: '100%',
               height: '100%',
@@ -27,7 +27,8 @@ const Home = () => {
                           transform: 'translateX(-50%)'
                         }}>
             <div className="hometext">
-            <text> Memory Glass</text>
+            <text>Meet</text> <br></br>
+            <text>Memo.</text>
             
             </div>
             <div style={{fontSize:'25px', paddingBottom:'25px'}}>
@@ -36,6 +37,7 @@ const Home = () => {
             
             <div class="buttons">
             <Link to="/aboutus" class="button is-large">About us</Link> 
+            <Link to="/howitworks" class="button is-large">How it works</Link> 
             <Link to="/team" class="button is-large">Meet the Team</Link>
             </div>
             

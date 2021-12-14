@@ -13,7 +13,7 @@ const Navbar = () => {
             }}/> </a>
             <div className="links">
                 
-                <Link to="/aboutus">About us</Link>
+                
                 <Link to ="/login" style= {{
                     color: "white",
                     borderRadius: "7px",

@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 const NavbarOut = () => {
     return (
+        <div className = "content">
         <nav className="navbar">
             <a href="/"> <img src={Logo} alt="Logo" style={{
-                    width: 180,
+                    width: 205,
                     height: 94.5,
                     margin: -10
             }}/> </a>
@@ -19,6 +20,7 @@ const NavbarOut = () => {
                 
             </div>
         </nav>
+        </div>
     );
 }
  
