@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
 /* base styles */
 
@@ -6,7 +7,7 @@
   font-family: "Gilroy";
   src: local("Gilroy"),
    url("./fonts/Gilroy.otf") format("truetype");
-  font-weight: bold;
+  
   }
 
  
@@ -14,7 +15,7 @@
 * {
   margin: 0;
   font-family: "Gilroy";
-  color: #432;
+  
   align-items: center;
   
 }
@@ -31,6 +32,7 @@ h2 {
   padding: 10px;
 }
 .navbar {
+  
   padding: 0px;
   font-size: 17px;
   display: flex;
@@ -54,6 +56,7 @@ h2 {
   color: #6abaf3;
   
 }
+
 .content {
   max-width: 1000px;
   margin: auto;
@@ -61,14 +64,22 @@ h2 {
   align-items: center;
 }
 
+.hometext {
+  color: #fff;
+  max-width:1800px;
+  align-items: left;
+  margin-top:90px;
+  line-height: 120px;
+  font-size: 130px;
+  padding-bottom:20px;
+  font-weight: 900;
+}
+
 .about{
-  
   padding: 10px 16px;
   margin: 20px;
   border: 2px solid #6abaf3;
   border-radius: 10px;
-  
-
 }
 
 .about:hover{

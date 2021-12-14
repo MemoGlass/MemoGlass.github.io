@@ -14,18 +14,19 @@ const AboutUs = () => {
 
     ])
     return (
-        
+        <div className = 'content'>
         <div className="AboutUs">
             <Navbar />
             <h1>About MemoryGlass</h1>
             {about.map((about) => (
-
+                
                 <div className="about" key={about.id}>
                     
                     <h2>{about.title}</h2>
                     <p>{about.body}</p>
                 </div>
             ))}
+        </div>
         </div>
     );
 }

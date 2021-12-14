@@ -1,17 +1,52 @@
 import React from 'react';
 import Navbar from './Navbar.js'
+import Banner from './banner.png'
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
     return ( 
         <div className="home">
           <Navbar />
-            <h1> This is Memory Glass </h1>
+          <div>
+          <img src={Banner} alt="Banner" style={{
+            marginTop: '-75px',
+              flex: 1,
+              width: '100%',
+              height: '100%',
+              alignItems: "stretch",
+              resizeMode: 'contain',
+            }}/>
+        
+        
+            <div style={{
+                          position: 'absolute', 
+                          color: 'white', 
+                          top: 150, 
+                          left: '44%', 
+                          transform: 'translateX(-50%)'
+                        }}>
+            <div className="hometext">
+            <text> Memory Glass</text>
             
-          Memory Glass is a startup focused on helping Alzheimers patients reconnect with those they can't remember. Our team is focused on combining technology with people with cognitive memory loss as an alternative to their current prescriptions. The  product combines smart glass technology with facial recognition in order to help identify loved ones of the patients.
-        
-        
+            </div>
+            <div style={{fontSize:'25px', paddingBottom:'25px'}}>
+            <text >Helping Alzheimers Patients reconnect with their loved ones</text>
+            </div>
+            
+            <div class="buttons">
+            <Link to="/aboutus" class="button is-large">About us</Link> 
+            <Link to="/team" class="button is-large">Meet the Team</Link>
+            </div>
+            
 
+            </div>
+          
+
+      </div>
+          
+    
+        
         </div>
      );
 }

@@ -8,6 +8,7 @@ import contacts from './Contacts.js';
 import sync from './sync.js';
 import Dashboard from './Dashboard.js'
 import NavbarOut from './NavbarOut.js';
+import Team from './Team.js';
 
 
 
@@ -20,13 +21,15 @@ function App() {
       <div className="App">
 
 
-        <div className="content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/" >
               <Home />
             </Route>
             <Route exact path="/login">
               <Login />
+            </Route>
+            <Route exact path="/team">
+              <Team />
             </Route>
             <Route exact path="/aboutus">
               <AboutUs />
@@ -51,7 +54,7 @@ function App() {
 
 
         </div>
-      </div>
+      
     </Router>
   );
 }
