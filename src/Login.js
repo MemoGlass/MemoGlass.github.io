@@ -25,6 +25,7 @@ const Login = () => {
         }
         else {
             console.log("Details do not match")
+            
         
             setError("⚠️ Email or password is incorrect ⚠️")
             

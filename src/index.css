@@ -97,6 +97,7 @@ h2 {
 .loginform {
   width: 500px;
   background-color: #fff;
+  color:#000;
   margin: 0 auto;
   text-align: center;
   border: 2px solid #ddd;
