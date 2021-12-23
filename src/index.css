@@ -6,9 +6,9 @@
 /* base styles */
 
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy"),
-   url("./fonts/Gilroy.otf") format("truetype");
+  font-family: "Uni Sans";
+  src: local("Uni Sans Regular"),
+   url("./fonts/Uni Sans Regular.otf") format("truetype");
   
   }
 
@@ -23,8 +23,7 @@
 
 * {
   margin: 0;
-  font-family: "Gilroy";
-  
+  font-family: "Uni Sans";
   align-items: center;
   
 }
@@ -91,6 +90,8 @@ h2 {
   margin: 20px;
   border: 2px solid #6abaf3;
   border-radius: 10px;
+  background-color: #fff;
+  color: #000;
 }
 
 .about:hover{

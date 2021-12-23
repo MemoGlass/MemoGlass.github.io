@@ -2,6 +2,14 @@ import { useState } from 'react';
 import Navbar from './Navbar.js'
 import { Button, Card } from 'react-bootstrap';
 import Dog from './dog.png'
+
+var rootStyle = {
+    backgroundColor : '#6abaf3',
+    color : 'white',
+    
+    height : '100vh'
+  }
+
 const Team = () => {
     const [team] = useState([
         { name: 'Andrew', position: 'Chief Exec Officer' },
@@ -9,15 +17,15 @@ const Team = () => {
         { name: 'Omkaar', position: 'Software Team Member' },
     ])
     return (
-        <div>
+        <div style={rootStyle}>
             <Navbar />
             <div className='content' >
-                    <h1>The Memory Glass Team</h1>
+                    <h1 style={{color:'white', fontSize:'40px', fontWeight:'bolder'}}>The Memory Glass Team</h1>
                     <div style={{display:'flex', flexWrap: 'wrap'}}>
                     {team.map((team) => (
                         <div className="team">
                             <Card style={{ width: '18rem', margin: '10px' }}>
-                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' }} />
+                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' , width: '250px', height: '250px', paddingTop:'10px'}} />
                                 <Card.Body>
                                     <Card.Title><h2>{team.name}</h2></Card.Title>
                                     <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px', fontSize:'15px' }}>

@@ -1,5 +1,10 @@
 import { useState } from 'react';
 import Navbar from './Navbar.js'
+var rootStyle = {
+    backgroundColor : '#6abaf3',
+    color : 'white',
+    height : '100%'
+  }
 const AboutUs = () => {
     const [about, setAbout] = useState([
         { title: 'Pitch 📊', body: 'Memory glass is a small standalone device that uses digital projection and facial recognition to help Alzheimer’s patients remember their loved ones.', id: 1 },
@@ -15,14 +20,14 @@ const AboutUs = () => {
     ])
     return (
        
-        <div>
+        <div style={rootStyle}>
                 <Navbar />
         
         <div className = 'content' >
             
         <div className="AboutUs">
             
-            <h1>About MemoryGlass</h1>
+            <h1 style={{color:'white'}}>About MemoryGlass</h1>
             {about.map((about) => (
                 
                 <div className="about" key={about.id}>
@@ -33,6 +38,7 @@ const AboutUs = () => {
             ))}
         </div>
         </div>
+        <span>&nbsp;&nbsp;</span>
         </div>
     );
 }

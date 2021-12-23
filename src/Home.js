@@ -18,7 +18,7 @@ const Home = () => {
       <img src={glass} alt="glass" style={{
             marginTop: '-30px',
               flex: 1,
-              marginTop: '45px',
+              marginTop: 'px',
               marginLeft: '750px',
               width: '550px',
               height: '350px',
