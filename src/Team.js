@@ -1,63 +1,55 @@
 import { useState } from 'react';
 import Navbar from './Navbar.js'
-import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
-import Button from 'react-bootstrap/Button';
+import { Button, Card , CardGroup} from 'react-bootstrap';
+import Dog from './dog.png'
 const Team = () => {
-    const [team, setTeam] = useState([
-        { name: 'Omkaar', position: 'CEO' },
-        { name: 'Andrew', position: 'My bitch' }
-
+    const [team] = useState([
+        { name: 'John', position: 'Chief Exec Officer' },
+        { name: 'Andrew', position: 'Team Member' }, 
     ])
     return (
-
         <div>
             <Navbar />
-
             <div className='content' >
-
-                <div className="AboutUs">
-
-                    <h1>About MemoryGlass</h1>
-
-
-
+                    <h1>The Memory Glass Team</h1>
                     {team.map((team) => (
-
                         <div className="team">
                             <CardGroup>
-                            <Card style={{ width: '18rem', display: 'flex', flexDirection: 'row', flex: 1, }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card style={{ width: '18rem', margin:'10px' }}>
+                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' }} />
                                 <Card.Body>
-                                    <Card.Title><h2>{team.name}</h2></Card.Title>
-                                    <Card.Text>
-                                    <h3>{team.position}</h3>
+                                    <Card.Title><h2>Andrew Deros</h2></Card.Title>
+                                    <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px' , marginLeft:'20px'}}>
+                                        <h3>Chief Exec Officer</h3>
+                                        <Button variant="primary" style={{ position: 'absolute', left: '42%', top: '88%', }}><i className="fa fa-envelope" /></Button>
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
-                            <Card style={{ width: '18rem', display: 'flex', flexDirection: 'row', flex: 1, }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card style={{ width: '18rem' , margin:'10px'}}>
+                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' }} />
+                                <Card.Body>
+                                    <Card.Title><h2>Omkaar Shenoy</h2></Card.Title>
+                                    <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px', marginLeft:'12px', fontSize:'15px'}}>
+                                        <h3>Software Team Member</h3>
+                                        <Button variant="primary" style={{ position: 'absolute', left: '42%', top: '88%', }}><i className="fa fa-envelope" /></Button>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            <Card style={{ width: '18rem' , margin:'10px'}}>
+                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' }} />
                                 <Card.Body>
                                     <Card.Title><h2>{team.name}</h2></Card.Title>
-                                    <Card.Text>
-                                    <h3>{team.position}</h3>
+                                    <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px' }}>
+                                        <h3>{team.position}</h3>
+                                        <Button variant="primary" style={{ position: 'absolute', left: '42%', top: '88%', }}><i className="fa fa-envelope" /></Button>
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
                                 </Card.Body>
                             </Card>
                             </CardGroup>
-
-                            
-                            
                         </div>
-
-
                     ))}
-                </div>
             </div>
         </div>
     );
 }
-
 export default Team;

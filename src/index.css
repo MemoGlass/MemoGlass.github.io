@@ -12,7 +12,14 @@
   
   }
 
- 
+ .card{
+   border-radius: 50px!important;
+   border: 'primary' ;
+ }
+
+ .card .button{ 
+   border: 100px;
+ }
 
 * {
   margin: 0;
@@ -96,9 +103,7 @@ h2 {
   margin-bottom: 8px;
   text-align: center;
 }
-.homebackground{
-  
-}
+
 
 .loginform {
   width: 500px;
