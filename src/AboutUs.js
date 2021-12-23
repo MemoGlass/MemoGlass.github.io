@@ -14,9 +14,14 @@ const AboutUs = () => {
 
     ])
     return (
-        <div className = 'content'>
+       
+        <div>
+                <Navbar />
+        
+        <div className = 'content' >
+            
         <div className="AboutUs">
-            <Navbar />
+            
             <h1>About MemoryGlass</h1>
             {about.map((about) => (
                 
@@ -26,6 +31,7 @@ const AboutUs = () => {
                     <p>{about.body}</p>
                 </div>
             ))}
+        </div>
         </div>
         </div>
     );

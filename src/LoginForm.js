@@ -3,6 +3,8 @@ import Navbar from './Navbar.js'
 import Banner from './banner.png'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
+
+
 function LogoutForm({ Login, error }) {
     const [details, setDetails] = useState({ email: "", password: "" });
 

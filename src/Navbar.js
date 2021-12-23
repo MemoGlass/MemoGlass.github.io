@@ -4,26 +4,29 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className='content'>
+        
         <nav className="navbar">
+            
+            <div className="links">
             <a href="/"> <img src={Logo} alt="Logo" style={{
                     width: 205,
                     height: 94.5,
-                    margin: -10
+                    margin: '-10px',
+                    
+                   
             }}/> </a>
-            <div className="links">
-                
                 
                 <Link to ="/login" style= {{
                     color: "white",
                     borderRadius: "7px",
-                    backgroundColor: '#6abaf3'
+                    backgroundColor: '#6abaf3',
+                    marginLeft: '900px'
                 }}>Login</Link>
                 
             </div>
 
         </nav>
-        </div>
+       
     );
 }
  

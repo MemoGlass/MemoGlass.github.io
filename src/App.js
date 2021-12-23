@@ -21,40 +21,40 @@ function App() {
       <div className="App">
 
 
-          <Switch>
-            <Route exact path="/" >
-              <Home />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/team">
-              <Team />
-            </Route>
-            <Route exact path="/aboutus">
-              <AboutUs />
-            </Route>
-            <Route exact path="/contacts">
-              <contacts />
-            </Route>
-            <Route exact path="/settings">
-              <Settings />
-            </Route>
-            <Route exact path="/sync">
-              <sync />
-            </Route>
-            <Route exact path="/dashboard">
+        <Switch>
+          <Route exact path="/" >
+            <Home />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/team">
+            <Team />
+          </Route>
+          <Route exact path="/aboutus">
+            <AboutUs />
+          </Route>
+          <Route exact path="/contacts">
+            <contacts />
+          </Route>
+          <Route exact path="/settings">
+            <Settings />
+          </Route>
+          <Route exact path="/sync">
+            <sync />
+          </Route>
+          <Route exact path="/dashboard">
             <NavbarOut />
-              <h1>Welcome, Andrew</h1>
-              <h2>What would you like to do today?</h2>
-              <Dashboard />
-            </Route>
+            <h1>Welcome, Andrew</h1>
+            <h2>What would you like to do today?</h2>
+            <Dashboard />
+          </Route>
 
-          </Switch>
+        </Switch>
 
 
-        </div>
-      
+      </div>
+
     </Router>
   );
 }
