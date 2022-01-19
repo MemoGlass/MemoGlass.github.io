@@ -13,8 +13,11 @@ var rootStyle = {
 const Team = () => {
     const [team] = useState([
         { name: 'Andrew', position: 'Chief Exec Officer' },
+        { name: 'Will', position: 'Hardware Team' },
+        { name: 'Ally', position: 'Hardware Team' },
         { name: 'Omkaar', position: 'Software Team Member' }, 
-        { name: 'Omkaar', position: 'Software Team Member' },
+        { name: 'Aditya', position: 'Software Team Member' },
+        { name: 'Chance', position: 'Software Team Member' },
     ])
     return (
         <div style={rootStyle}>
@@ -30,7 +33,8 @@ const Team = () => {
                                     <Card.Title><h2>{team.name}</h2></Card.Title>
                                     <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px', fontSize:'15px' }}>
                                         <h3>{team.position}</h3>
-                                        <Button variant="primary" style={{ position: 'absolute', left: '42%', top: '88%', }}><i className="fa fa-envelope" /></Button>
+                                        
+                                        <Button  variant="primary" style={{ position: 'absolute', left: '42%', top: '88%', }}><i className="fa fa-envelope" /></Button>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
