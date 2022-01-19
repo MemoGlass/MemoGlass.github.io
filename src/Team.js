@@ -6,8 +6,7 @@ import Dog from './dog.png'
 var rootStyle = {
     backgroundColor : '#6abaf3',
     color : 'white',
-    
-    height : '100vh'
+    height : '100%'
   }
 
 const Team = () => {
