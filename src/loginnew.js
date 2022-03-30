@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Settings from './Settings.js'
 import Contacts from './Contacts.js';
 
@@ -8,6 +7,7 @@ const Tabs = props => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const activeTab = props.children[activeTabIndex];
   return (
+    
     <div>
       <div className="tabs">
         {props.children.map((tab, i) => (
@@ -33,6 +33,7 @@ const Tabs = props => {
       </div>
       <div className="tab-content">{activeTab.props.children}</div>
     </div>
+    
   );
 };
 

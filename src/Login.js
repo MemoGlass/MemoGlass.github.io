@@ -8,8 +8,8 @@ import Tabs from './loginnew.js';
 const Login = () => {
 
     const adminUser = {
-        email: "admin@memoryglass.com",
-        password: "andrewisbald"
+        email: "memo@glass.com",
+        password: "."
     }
     const [user, setuser] = useState({ email: "" });
     const [error, setError] = useState("");
@@ -20,7 +20,6 @@ const Login = () => {
             console.log("Logged in")
             setuser({
                 email: details.email
-
             })
         }
         else {

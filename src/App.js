@@ -9,6 +9,7 @@ import sync from './sync.js';
 import Dashboard from './Dashboard.js'
 import NavbarOut from './NavbarOut.js';
 import Team from './Team.js';
+import tabs from './tabs.js';
 
 
 
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route exact path="/sync">
             <sync />
+          </Route>
+          <Route exact path='/tabs'>
+             <tabs />
           </Route>
           <Route exact path="/dashboard">
             <NavbarOut />

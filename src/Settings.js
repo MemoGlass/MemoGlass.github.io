@@ -3,7 +3,7 @@ const Settings = () => {
         <div>
             <h1>Settings</h1>
             <div>
-                
+                <button>Hello</button>
             </div>
         </div>
      );
