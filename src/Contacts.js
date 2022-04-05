@@ -1,12 +1,54 @@
-const Contacts = () => {
-    return ( 
-        <div>
-            <h1>Contacts</h1>
-            <div>
-                
+import { useState } from 'react';
+
+import { Button, Card } from 'react-bootstrap';
+import Dog from './dog.png'
+import { Link } from 'react-router-dom';
+
+
+
+const Team = () => {
+    const [team] = useState([
+        { name: 'Andrew', position: 'Chief Exec Officer' },
+        { name: 'Will', position: 'Hardware Team' },
+        { name: 'Ally', position: 'Hardware Team' },
+        { name: 'Omkaar', position: 'Software Team Member' }, 
+        { name: 'Aditya', position: 'Software Team Member' },
+        { name: 'Chance', position: 'Software Team Member' },
+    ])
+    return (
+       
+
+            <div className='contactcontent' >
+                    
+                    <div style={{display:'flex', flexWrap: 'wrap'}}>
+                    <Link to ="/login" style= {{
+                    color: "white",
+                    borderRadius: "7px",
+                    backgroundColor: '#6abaf3',
+                    marginLeft: '850px',
+                    padding: '10px'
+                }}>+ New Contact</Link>
+                    {team.map((team) => (
+                        <div className="cteam">
+                            
+                            <Link to={'/contact'}>
+                            <Card style={{ width: '18rem', margin: '10px' }}>
+                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' , width: '250px', height: '250px', paddingTop:'10px'}} />
+                                <Card.Body>
+                                    <Card.Title><h2>{team.name}</h2></Card.Title>
+                                    <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px', fontSize:'15px' }}>
+                                        <h3>{team.position}</h3>
+                                        
+                                        <Button  variant="primary" style={{ position: 'absolute', left: '42%', top: '88%', }}><i className="fa fa-envelope" /></Button>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            </Link>
+                        </div>
+                    ))}
+                    </div>
             </div>
-        </div>
-     );
+        
+    );
 }
- 
-export default Contacts;
+export default Team;

@@ -74,6 +74,13 @@ h2 {
   align-items: center;
 }
 
+.cteam:hover {
+  background-color: rgba(240, 240, 238, 0.61);
+  border-radius: 50px!important;
+  border-width: 1px;
+
+}
+
 .hometext {
   color: #fff;
   max-width:1800px;
