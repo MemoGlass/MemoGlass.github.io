@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Navbar from './Navbar.js'
 import { Button, Card } from 'react-bootstrap';
-import Dog from './dog.png'
+import Dog from './pic/dog.png'
+import Kinjal from  './pic/kinjal.jpeg'
 
 var rootStyle = {
     backgroundColor : '#6abaf3',
@@ -16,7 +17,8 @@ const Team = () => {
         { name: 'Ally', position: 'Hardware Team' },
         { name: 'Omkaar', position: 'Software Team Member' }, 
         { name: 'Aditya', position: 'Software Team Member' },
-        { name: 'Chance', position: 'Software Team Member' },
+        { name: 'Chance', position: 'Software Team Member' ,pic: Dog },   
+        { name: 'Kinjal', position: 'Software Team Member', pic: Kinjal },
     ])
     return (
         <div style={rootStyle}>
@@ -27,7 +29,7 @@ const Team = () => {
                     {team.map((team) => (
                         <div className="team">
                             <Card style={{ width: '18rem', margin: '10px' }}>
-                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' , width: '250px', height: '250px', paddingTop:'10px'}} />
+                                <Card.Img variant="top" src={team.pic} style={{ borderRadius: '50%' , width: '250px', height: '250px', paddingTop:'10px'}} />
                                 <Card.Body>
                                     <Card.Title><h2>{team.name}</h2></Card.Title>
                                     <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px', fontSize:'15px' }}>

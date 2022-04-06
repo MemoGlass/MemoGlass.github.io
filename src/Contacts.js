@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Button, Card } from 'react-bootstrap';
-import Dog from './dog.png'
+import Dog from './pic/dog.png'
 import { Link } from 'react-router-dom';
 
 
