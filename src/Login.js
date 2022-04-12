@@ -8,7 +8,7 @@ import Tabs from './loginnew.js';
 const Login = () => {
 
     const adminUser = {
-        email: "memo@glass.com",
+        email: ".@a.a",
         password: "."
     }
     const [user, setuser] = useState({ email: "" });

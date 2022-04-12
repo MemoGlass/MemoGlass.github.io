@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Settings from './Settings.js'
 import Contacts from './Contacts.js';
+import Reminder from'./reminders.js';
 
 
 const Tabs = props => {
@@ -46,17 +47,12 @@ export default function App() {
           <div><Contacts /></div> {" "}
           
         </div>
-        <div title="Location History">
-          <div><Contacts /></div> {" "}
-          
-        </div>
+
         
         <div title="Reminders">
-          Add a new contact here {" "}
+          <Reminder /> {" "}
         </div>
-        <div title="Lost Object">
-          Add a new contact here {" "}
-        </div>
+
         <div title="Settings">
           <div>
               <Settings />
