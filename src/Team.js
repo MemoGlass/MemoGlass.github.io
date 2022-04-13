@@ -3,6 +3,8 @@ import Navbar from './Navbar.js'
 import { Button, Card } from 'react-bootstrap';
 import Dog from './pic/dog.png'
 import Kinjal from  './pic/kinjal.jpeg'
+import Chance from './pic/chance.jpg'
+import Andrew from './pic/andrew.jpg'
 
 var rootStyle = {
     backgroundColor : '#6abaf3',
@@ -17,7 +19,8 @@ const Team = () => {
         { name: 'Ally', position: 'Hardware Team' },
         { name: 'Omkaar', position: 'Software Team Member' }, 
         { name: 'Aditya', position: 'Software Team Member' },
-        { name: 'Chance', position: 'Software Team Member' ,pic: Dog },   
+        { name: 'Andrew', position: 'Software Team Member' ,pic: Andrew},
+        { name: 'Chance', position: 'Software Team Member' ,pic: Chance },   
         { name: 'Kinjal', position: 'Software Team Member', pic: Kinjal },
     ])
     return (
