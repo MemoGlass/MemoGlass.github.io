@@ -98,9 +98,21 @@ h2 {
 
 .ralign{
 
-  display:flex;
-  justify-content: right;
-  align-items: center;
+  float: right;
+  font-size:30px;
+}
+.box{
+  border:20px;
+  padding-bottom:55px;
+
+}
+.box:hover{
+  background-color: rgba(240, 240, 238, 0.61);
+  opacity: 1;
+
+}
+.lalign{
+  float: left;
   font-size:30px;
 }
 
