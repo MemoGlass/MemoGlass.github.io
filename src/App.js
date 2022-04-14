@@ -1,11 +1,8 @@
-import Navbar from './Navbar.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home.js';
 import Login from './Login.js';
 import AboutUs from './AboutUs.js';
 import Settings from './Settings.js'
-import contacts from './Contacts.js';
-import sync from './sync.js';
 import Dashboard from './Dashboard.js'
 import NavbarOut from './NavbarOut.js';
 import Team from './Team.js';

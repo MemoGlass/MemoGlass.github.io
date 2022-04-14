@@ -1,7 +1,5 @@
-import Settings from './Settings.js'
-import { Link } from 'react-router-dom';
+
 import React from 'react'
-import { render } from '@testing-library/react'
 
 
 function Dashboard() {

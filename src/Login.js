@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
-import Dashboard from './Dashboard';
 import NavbarOut from './NavbarOut.js'
-import { Link } from 'react-router-dom';
 import Tabs from './loginnew.js';
 
 const Login = () => {
@@ -16,7 +14,7 @@ const Login = () => {
 
     const Login = details => {
         console.log(details);
-        if (details.email == adminUser.email && details.password == adminUser.password) {
+        if (details.email === adminUser.email && details.password === adminUser.password) {
             console.log("Logged in")
             setuser({
                 email: details.email

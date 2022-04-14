@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 
 const Team = () => {
     const [team] = useState([
-        { name: 'Andrew', position: 'Chief Exec Officer' },
-        { name: 'Will', position: 'Hardware Team' },
-        { name: 'Ally', position: 'Hardware Team' },
-        { name: 'Omkaar', position: 'Software Team Member' }, 
-        { name: 'Aditya', position: 'Software Team Member' },
+        { name: 'Andrew', position: 'Son' },
+        { name: 'Will', position: 'Friend' },
+        { name: 'Ally', position: 'Daughter' },
+        { name: 'Omkaar', position: 'Neighbour' }, 
+        { name: 'Aditya', position: 'Friend' },
         { name: 'Chance', position: 'Software Team Member' },
     ])
     return (
