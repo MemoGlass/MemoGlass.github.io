@@ -3,7 +3,8 @@ import Settings from './Settings.js'
 import Contacts from './Contacts.js';
 import Reminder from './reminders.js';
 import Location from './location.js';
-import locationfound from './located.js'
+import locationfound from './located.js';
+import Objects from './objects.js'
 
 
 const Tabs = props => {
@@ -51,6 +52,10 @@ export default function App() {
           </div>
           <div title="Location">
             <div><Location /> <locationfound /></div> {" "}
+
+          </div>
+          <div title="Location">
+            <div><Objects /> <locationfound /></div> {" "}
 
           </div>
 
