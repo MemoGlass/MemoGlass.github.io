@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Settings from './Settings.js'
 import Contacts from './Contacts.js';
-import Reminder from'./reminders.js';
+import Reminder from './reminders.js';
+import Location from './location.js';
 
 
 const Tabs = props => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const activeTab = props.children[activeTabIndex];
   return (
-    
+
     <div>
       <div className="tabs">
         {props.children.map((tab, i) => (
@@ -34,33 +35,36 @@ const Tabs = props => {
       </div>
       <div className="tab-content">{activeTab.props.children}</div>
     </div>
-    
+
   );
 };
 
 export default function App() {
   return (
     <div className="App">
-      <div className = "content">
-      <Tabs>
-        <div title="Contacts">
-          <div><Contacts /></div> {" "}
-          
-        </div>
+      <div className="content">
+        <Tabs>
+          <div title="Contacts">
+            <div><Contacts /></div> {" "}
 
-        
-        <div title="Reminders">
-          <Reminder /> {" "}
-        </div>
-
-        <div title="Settings">
-          <div>
-              <Settings />
           </div>
-          {" "}
-        </div>
-      </Tabs>
-    </div>
+          <div title="Location">
+            <div><Location /></div> {" "}
+
+          </div>
+
+
+          <div title="Reminders">
+            <Reminder /> {" "}
+          </div>
+
+          <div title="Settings">
+            <div>
+              <Settings /> {" "}
+            </div> 
+          </div>
+        </Tabs>
+      </div>
     </div>
   );
 }

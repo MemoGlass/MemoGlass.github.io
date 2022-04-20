@@ -28,9 +28,6 @@ const Login = () => {
             
         }
     }
-
-    
-
     return (
         <div className="login">
             {(user.email !== "") ? (

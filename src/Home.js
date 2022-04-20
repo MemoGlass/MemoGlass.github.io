@@ -44,7 +44,7 @@ const Home = () => {
 
         <div class="buttons">
           <Link to="/aboutus" class="button is-large">About us</Link>
-          <Link to="/howitworks" class="button is-large">How it works</Link>
+          {/* <Link to="/howitworks" class="button is-large">How it works</Link>  */}
           <Link to="/team" class="button is-large">Meet the Team</Link>
         </div>
       </div>
