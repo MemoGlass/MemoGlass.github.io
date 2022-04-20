@@ -2,14 +2,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home.js';
 import Login from './Login.js';
 import AboutUs from './AboutUs.js';
-import Settings from './Settings.js'
-import Dashboard from './Dashboard.js'
+import Settings from './Settings.js'  
 import NavbarOut from './NavbarOut.js';
 import Team from './Team.js';
-
-
-
-
+import Locationfound from './located.js';
 
 function App() {
 
@@ -44,12 +40,10 @@ function App() {
           <Route exact path='/tabs'>
              <tabs />
           </Route>
-          <Route exact path="/dashboard">
-            <NavbarOut />
-            <h1>Welcome, Andrew</h1>
-            <h2>What would you like to do today?</h2>
-            <Dashboard />
+          <Route exact path='/located'>
+            <Locationfound />
           </Route>
+
 
         </Switch>
 

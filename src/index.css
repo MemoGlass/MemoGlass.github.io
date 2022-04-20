@@ -95,6 +95,32 @@ h2 {
 .slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
 }
+#main {
+  margin: auto;
+  width: 800px;
+}
+
+#sidebar    {
+  margin-left:-25px;
+  margin-top:250px;
+  width: 200px;
+  float: left;
+}
+
+#page-wrap  {
+  width: 600px;
+  border-radius:10px;
+  border: 1px solid #000;
+
+  
+  float: left;
+}
+
+.clear:after {
+  clear: both;
+  display: table;
+  content: "";
+}
 
 .ralign{
 

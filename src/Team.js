@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Navbar from './Navbar.js'
 import { Button, Card } from 'react-bootstrap';
-import Dog from './pic/dog.png'
 import Kinjal from  './pic/kinjal.jpeg'
 import Chance from './pic/chance.jpg'
 import Andrew from './pic/andrew.jpg'
