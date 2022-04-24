@@ -11,6 +11,8 @@ import Aditya from  './pic/Aditya.jpeg';
 import Chance from  './pic/chance.jpeg';
 import Abhinav from  './pic/Abhinav.jpeg';
 import Brooke from  './pic/Brooke.jpeg'; 
+import Omkaar from './pic/omkaar.png';
+import Will from  './pic/will.jpeg'; 
 
 var rootStyle = {
     backgroundColor : '#6abaf3',
@@ -21,12 +23,12 @@ var rootStyle = {
 const Team = () => {
     const [team] = useState([
         { name: 'Andrew', position: 'Chief Exec Officer', pic: Andrew },
-        { name: 'Will', position: 'Hardware Team' },
+        { name: 'Will', position: 'Hardware Team', pic: Will },
         { name: 'Alyssa', position: 'Hardware Team', pic: Alyssa },
         { name: 'Sid', position: 'Hardware Team', pic: Sid },
         { name: 'Andres', position: 'Hardware Team', pic: Andres  },
-        { name: 'Omkaar', position: 'Software Team Member' }, 
         { name: 'Aditya', position: 'Software Team Member', pic: Aditya },
+        { name: 'Omkaar', position: 'Software Team Member',pic:Omkaar }, 
         { name: 'Andrew', position: 'Software Team Member', pic: AndrewFishell  },
         { name: 'Chance', position: 'Software Team Member', pic: Chance },   
         { name: 'Kinjal', position: 'Software Team Member', pic: Kinjal },
