@@ -1,19 +1,24 @@
 import { useState } from 'react';
-
 import { Button, Card } from 'react-bootstrap';
 import Dog from './pic/dog.png'
 import { Link } from 'react-router-dom';
+import Alex from  './pic/son.jpeg';
+import William from  './pic/friend.jpeg';
+import Allison from  './pic/daughter.jpeg';
+import Oliver from  './pic/brother.jpeg';
+import Anna from  './pic/sister.jpeg';
+import Liam from  './pic/neighbour.jpeg';
 
 
 
 const Team = () => {
     const [team] = useState([
-        { name: 'Andrew', position: 'Son' },
-        { name: 'Will', position: 'Friend' },
-        { name: 'Ally', position: 'Daughter' },
-        { name: 'Omkaar', position: 'Neighbour' }, 
-        { name: 'Aditya', position: 'Friend' },
-        { name: 'Chance', position: 'Software Team Member' },
+        { name: 'Alex', position: 'Son', pic: Alex },
+        { name: 'William', position: 'Friend', pic: William },
+        { name: 'Allison', position: 'Daughter', pic: Allison },
+        { name: 'Oliver', position: 'Brother', pic: Oliver }, 
+        { name: 'Anna', position: 'Sister', pic: Anna },
+        { name: 'Liam', position: 'Neighbour', pic: Liam },
     ])
     return (
        
@@ -33,7 +38,7 @@ const Team = () => {
                             
                             <Link to={'/contact'}>
                             <Card style={{ width: '18rem', margin: '10px' }}>
-                                <Card.Img variant="top" src={Dog} style={{ borderRadius: '50%' , width: '250px', height: '250px', paddingTop:'10px'}} />
+                                <Card.Img variant="top" src={team.pic} style={{ borderRadius: '50%' , width: '250px', height: '250px', paddingTop:'10px'}} />
                                 <Card.Body>
                                     <Card.Title><h2>{team.name}</h2></Card.Title>
                                     <Card.Text style={{ marginTop: '-30px', paddingBottom: '30px', fontSize:'15px' }}>

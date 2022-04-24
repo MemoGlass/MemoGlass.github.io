@@ -1,9 +1,16 @@
 import { useState } from 'react';
 import Navbar from './Navbar.js'
 import { Button, Card } from 'react-bootstrap';
-import Kinjal from  './pic/kinjal.jpeg'
-import Chance from './pic/chance.jpg'
-import Andrew from './pic/andrew.jpg'
+import Kinjal from  './pic/kinjal.jpeg';
+import Andrew from './pic/useandrew.jpeg';
+import AndrewFishell from  './pic/andrew2.jpeg';
+import Alyssa from  './pic/Alyssa.jpeg';
+import Sid from  './pic/Sid.jpeg';
+import Andres from  './pic/andres.jpeg';
+import Aditya from  './pic/Aditya.jpeg';
+import Chance from  './pic/chance.jpeg';
+import Abhinav from  './pic/Abhinav.jpeg';
+import Brooke from  './pic/Brooke.jpeg'; 
 
 var rootStyle = {
     backgroundColor : '#6abaf3',
@@ -13,14 +20,18 @@ var rootStyle = {
 
 const Team = () => {
     const [team] = useState([
-        { name: 'Andrew', position: 'Chief Exec Officer' },
+        { name: 'Andrew', position: 'Chief Exec Officer', pic: Andrew },
         { name: 'Will', position: 'Hardware Team' },
-        { name: 'Ally', position: 'Hardware Team' },
+        { name: 'Alyssa', position: 'Hardware Team', pic: Alyssa },
+        { name: 'Sid', position: 'Hardware Team', pic: Sid },
+        { name: 'Andres', position: 'Hardware Team', pic: Andres  },
         { name: 'Omkaar', position: 'Software Team Member' }, 
-        { name: 'Aditya', position: 'Software Team Member' },
-        { name: 'Andrew', position: 'Software Team Member' ,pic: Andrew},
-        { name: 'Chance', position: 'Software Team Member' ,pic: Chance },   
+        { name: 'Aditya', position: 'Software Team Member', pic: Aditya },
+        { name: 'Andrew', position: 'Software Team Member', pic: AndrewFishell  },
+        { name: 'Chance', position: 'Software Team Member', pic: Chance },   
         { name: 'Kinjal', position: 'Software Team Member', pic: Kinjal },
+        { name: 'Abhinav', position: 'Software Team Member', pic: Abhinav  },
+        { name: 'Brooke', position: 'Software Team Member', pic: Brooke  }, 
     ])
     return (
         <div style={rootStyle}>

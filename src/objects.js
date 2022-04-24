@@ -3,20 +3,20 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import uuid from 'react-uuid'
 
 const itemsFromBackend = [
-  { id: uuid(), content: "First item" },
-  { id: uuid(), content: "Second item" },
-  { id: uuid(), content: "Third item" },
-  { id: uuid(), content: "Fourth item" },
-  { id: uuid(), content: "Fifth item" }
+  { id: uuid(), content: "Glasses" },
+  { id: uuid(), content: "TV Remote" },
+  { id: uuid(), content: "Phone" },
+  { id: uuid(), content: "Keys" },
+  { id: uuid(), content: "Wallet" }
 ];
 
 const columnsFromBackend = {
   [uuid()]: {
-    name: "Items",
+    name: "Untracked",
     items: itemsFromBackend
   },
   [uuid()]: {
-    name: "Items tracked",
+    name: "Tracked",
     items: []
   },
 
@@ -88,6 +88,7 @@ function App() {
                           background: snapshot.isDraggingOver
                             ? "lightblue"
                             : "lightgrey",
+                          borderRadius:"10px",
                           padding: 4,
                           width: 250,
                           minHeight: 500
@@ -111,9 +112,11 @@ function App() {
                                       padding: 16,
                                       margin: "0 0 8px 0",
                                       minHeight: "50px",
+                                      borderRadius:"15px",
+                                      borderWidth:"10px",
                                       backgroundColor: snapshot.isDragging
                                         ? "#263B4A"
-                                        : "#456C86",
+                                        : "#6abaf3",
                                       color: "white",
                                       ...provided.draggableProps.style
                                     }}

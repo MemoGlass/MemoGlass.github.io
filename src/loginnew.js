@@ -54,7 +54,7 @@ export default function App() {
             <div><Location /> <locationfound /></div> {" "}
 
           </div>
-          <div title="Location">
+          <div title="Lost Objects">
             <div><Objects /> <locationfound /></div> {" "}
 
           </div>
